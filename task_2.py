@@ -23,11 +23,11 @@ def main():
     x = input("Nhập giá trị x: ")
     activation_function = input("Nhập tên activation function (sigmoid, relu, elu): ").strip().lower()
     
-    x = float(x)
-    
     if not is_number(x):
         print('x must be a number')
         return
+
+    x = float(x)
     
     if activation_function not in ['sigmoid', 'relu', 'elu']:
         print(f"{activation_function} function is not supported")
