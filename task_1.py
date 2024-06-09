@@ -13,6 +13,6 @@ try:
     fn = int(input('Nhập fn: '))
 except ValueError as e:
     print(e)
-    print('All inputs must be integers')
+    print('All inputs must be integers and greater than 0')
 else:
     classification_model(tp, fp, fn) 
