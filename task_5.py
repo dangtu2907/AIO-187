@@ -1,4 +1,4 @@
-def MD_nRE(y, y_hat, n, p):
+def md_nre(y, y_hat, n, p):
     if len(y) != len(y_hat):
         raise ValueError("Độ dài của y và y_hat phải bằng nhau")
     
@@ -21,6 +21,6 @@ y = input_list("Nhập danh sách các giá trị thực tế y: ")
 y_hat = input_list("Nhập danh sách các giá trị dự đoán y_hat: ")
 n = int(input("Nhập bậc của căn n: "))
 p = int(input("Nhập p: "))
-result = MD_nRE(y, y_hat, n, p)
+result = md_nre(y, y_hat, n, p)
 print("MD_nRE:", result)
 
