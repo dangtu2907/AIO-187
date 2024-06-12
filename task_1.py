@@ -1,7 +1,7 @@
 def evaluate_classification_model(tp, fp, fn):
     precision = tp / (tp + fp)
     recall = tp / (tp + fn)
-    f1_score = 2 * ((precision * recall) / (precision * recall))
+    f1_score = 2 * ((precision * recall) / (precision + recall))
     
     print(f'Precision: {precision:.2f}')
     print(f'Recall: {recall:.2f}')
